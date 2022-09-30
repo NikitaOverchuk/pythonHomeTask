@@ -5,4 +5,4 @@ res = []
 for i in range(-myList[0], myList[0] + 1):
     res.append(i)
 print(*res)
-print(res[myList[1] + 1] * res[myList[2] + 1])
+print(res[myList[1] - 1] * res[myList[2] - 1])
