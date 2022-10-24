@@ -6,8 +6,6 @@
 
 nums = list(map(int, input().split()))
 res = []
-for i in range(len(nums) // 2):
-    res.append(nums[i] * nums[-(i + 1)])
-if len(nums) % 2 != 0:
-    res.append((nums[len(nums) // 2])**2)
+for i in range((len(nums) + 1) // 2):                             
+    res.append(nums[i] * nums[len(nums) - 1 - i])
 print(*res)
