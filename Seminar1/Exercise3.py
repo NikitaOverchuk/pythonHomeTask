@@ -6,8 +6,7 @@ if x > 0:
         print("1 четверть")
     else:
         print("4 четверть")
+elif y > 0:
+    print("2 четверть")
 else:
-    if y > 0:
-        print("2 четверть")
-    else:
-        print("3 четверть")
+    print("3 четверть")
