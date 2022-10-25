@@ -2,9 +2,12 @@
 # *Пример*
 # - при [1, 1, 2, 3, 3, 4, 1, 5, 7, 8, 8, 7, 9]     ->        [2, 4, 5, 9]
 
-res = []
 nums = list(map(int, input().split()))
+res1 = set()
+res2 = set()
 for i in nums:
-    if nums.count(i) == 1:
-        res.append(i)
-print(*res)
+    if i in res1:
+        res2.add(i)
+    else:
+        res1.add(i)
+print(*sorted(res1 - res2))
